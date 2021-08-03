@@ -139,31 +139,31 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return (math.pow (mun, 3))
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return (math.pow(num,exponent))
+  return math.pow(num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return (math.round(num))
+  return math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return (math.ceil(num))
+  return math.ceil(num);
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return (math.random())
+  return math.random();
 }
 
 function esPositivo(numero) {
@@ -174,9 +174,9 @@ function esPositivo(numero) {
     if(numero === 0){
       return false
     } else if (numero > 0) {
-      return EsPositivo
+      return "Es positivo"
     } else {
-      return EsNegativo
+      return "Es negativo"
     }
     
   }
@@ -200,20 +200,20 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola" + nombre + "!";
+  return "Hola" + " " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return altura * ancho;
+  return alto*ancho;
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return lado * 4;
+  return lado*4;
 }
 
 
@@ -221,7 +221,6 @@ function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
   return (base + altura) / 2;
-
 }
 
 
@@ -239,12 +238,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return DatoIncorrecto;
+    return "Dato incorrecto";
   }
-  if (letra === a || letra === e || letra === i || letra === o || letra === u){
-    return EsVocal;
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal";
   } else {
-    return DatoIncorrecto;
+    return "Dato incorrecto";
   }
 }
 
