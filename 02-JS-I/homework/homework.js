@@ -1,10 +1,10 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'sabrina';
+const nuevaString = 'nube';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 15 ;
+const nuevoNum = 1 ;
 
 
 // Crea una variable booleana:
@@ -36,7 +36,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y;
+  return x+y;
 }
 
 function resta(x, y) {
@@ -61,9 +61,9 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if( x === y ){
+  if (x === y){
     return true;
-  } else{
+  } else {
     return false;
   }
 }
@@ -83,9 +83,9 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num < 90){
+  if (num < 90){
     return true;
-  } else {
+  } else{
     return false;
   }
 }
@@ -94,7 +94,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if( num > 50){
+  if (num > 50){
     return true;
   } else {
     return false;
@@ -111,7 +111,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if( num % 2 === 0 ){
+  if (num %2 === 0){
     return true;
   } else {
     return false;
@@ -122,9 +122,9 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 === 1 ){
+  if(num % 2 === 1){
     return true;
-  } else {
+  } else{
     return false;
   }
 }
@@ -133,25 +133,25 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return ( Math.pow (num,2))
+  return Math.pow(num,2);
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num * num;
+  return Math.pow (num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.pow(num, exponent);
+  return Math.pow (num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num);
+  return Math.round (num);
 }
 
 function redondearHaciaArriba(num) {
@@ -172,28 +172,28 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
     if(numero === 0){
-      return false
+      return false;
     } else if (numero > 0) {
-      return "Es positivo"
+      return "Es positivo";
     } else {
-      return "Es negativo"
+      return "Es negativo";
     }
-    
+
   }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return str + "!";
+  return str + "!" ;
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + " " + apellido
-  return combinado;
+  return nombre+ " " +apellido;
+
 }
 
 function obtenerSaludo(nombre) {
@@ -237,12 +237,12 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if(letra.length > 1){
+  if(letra.length>1){
     return "Dato incorrecto";
   }
-  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+  if(letra==="a" || letra==="e" || letra==="i" || letra==="o" || letra==="u"){
     return "Es vocal";
-  } else {
+  } else{
     return "Dato incorrecto";
   }
 }
